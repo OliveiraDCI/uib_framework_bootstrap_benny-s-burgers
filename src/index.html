@@ -15,45 +15,44 @@
   </head>
   <body>
     <header class="sticky-top">
-      <nav class="bg-black navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
           <div class="logo"></div>
-          <a class="navbar-brand text-primary" href="#">Benny's</a>
+          <a class="navbar-brand text-primary" href="#"> Benny's</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-dark navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
+            class="collapse navbar-collapse end-force"
+            id="navbarNavDropdown"
           >
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a
                   class="nav-link active text-primary"
                   aria-current="page"
-                  href="#"
+                  href="#idea"
                   >The Idea</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-primary" href="#">News</a>
+                <a class="nav-link text-primary" href="#news">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-primary" href="#">Contact</a>
+                <a class="nav-link text-primary" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
       <div class="hero container-fluid">
         <h1 class="display-1 text-white">Benny's Burger</h1>
         <p class="display-6 text-white">Hands down, best burger in town</p>
@@ -62,6 +61,24 @@
         </button>
       </div>
     </header>
+
+    <main>
+      <section id="idea" class="p-4">
+        <h2 class="text-center p-3 mt-5 h1">The Idea</h2>
+      </section>
+
+      <section id="news" class="bg-primary p-4">
+        <h2 class="text-center p-3 mt-5 h1">what's new at Benny's</h2>
+      </section>
+
+      <section id="contact" class="p-4">
+        <h2 class="text-center p-3 mt-5 h1">Book a table</h2>
+      </section>
+    </main>
+
+    <footer class="container-fluid bg-black p-3 text-end text-primary">
+      &copy 2022
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
