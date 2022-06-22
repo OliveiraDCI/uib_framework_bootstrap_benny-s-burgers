@@ -14,8 +14,8 @@
     <title>Sass and Bootstrap</title>
   </head>
   <body>
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg bg-black">
+    <header>
+      <nav class="fixed-top navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
           <div class="logo"></div>
           <a class="navbar-brand text-primary" href="#"> Benny's</a>
@@ -63,20 +63,80 @@
     </header>
 
     <main>
-      <section id="idea" class="p-4">
+      <section id="idea" class="section-idea p-4">
         <h2 class="text-center p-3 mt-5 h1">The Idea</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          <div class="col">
+            <div class="card border-0">
+              <div
+                class="icon-container bg-light d-flex justify-content-center border border-1 border-secondary rounded-circle p-2"
+              >
+                <img
+                  src="./images/care.svg"
+                  style="--bs-border-opacity: 0.5"
+                  alt="care-icon"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold">100% Organic</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                  natus voluptatem et sint harum maxime inventore autem rem
+                  fugiat neque!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <div
+                class="icon-container bg-light d-flex justify-content-center border border-1 border-secondary rounded-circle p-2"
+              >
+                <img src="./images/plant.svg" alt="plant" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold">Vegan</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                  natus voluptatem et sint harum maxime inventore autem rem
+                  fugiat neque!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto">
+            <div class="card border-0">
+              <div
+                class="icon-container bg-light d-flex justify-content-center border border-1 border-secondary rounded-circle p-2"
+              >
+                <img src="./images/heart.svg" alt="heart" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold">
+                  No animal cruelty
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                  natus voluptatem et sint harum maxime inventore autem rem
+                  fugiat neque!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="news" class="bg-primary p-4">
-        <h2 class="text-center p-3 mt-5 h1">what's new at Benny's</h2>
+        <h2 class="text-center text-white p-3 h1">what's new at Benny's</h2>
       </section>
 
       <section id="contact" class="p-4">
-        <h2 class="text-center p-3 mt-5 h1">Book a table</h2>
+        <h2 class="text-center p-3 h1">Book a table</h2>
       </section>
     </main>
 
-    <footer class="container-fluid bg-black p-3 text-end text-primary">
+    <footer class="container-fluid bg-black p-3 text-end text-white">
       &copy 2022
     </footer>
 
